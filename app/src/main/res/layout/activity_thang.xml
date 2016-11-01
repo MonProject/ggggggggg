@@ -13,7 +13,8 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:weightSum="1">
 
         <TextView
             android:text="สรุปการซื้อ"
@@ -28,23 +29,24 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="403dp"
+            android:layout_weight="0.66">
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50dp">
+                android:layout_marginTop="20dp">
 
                 <TextView
                     android:text="ดอกบัว"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/textView20"
-                    android:layout_weight="0"
                     android:textColor="@android:color/black"
                     android:textAlignment="textStart"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -137,71 +139,43 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <RadioGroup
+                <TextView
+                    android:text="ที่อยู่"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:clickable="true">
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView13"
+                    android:layout_marginTop="20dp"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black" />
 
-                    <RadioButton
-                        android:text="ส่งฟรี"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/radioButton"
-                        android:layout_weight="1"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:text="(เฉพาะคลอง 2 ธัญบุรี เท่านั้น)"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/textView33"
-                        android:layout_weight="1" />
-
-                    <RadioButton
-                        android:text="รับเอง"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/radioButton2"
-                        android:layout_weight="1"
-                        android:textSize="18sp"
-                        android:textColorLink="@android:color/black" />
-                </RadioGroup>
-
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView14"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="20dp" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
 
-                <TextView
-                    android:text="20/8 หมู่2 ตำบลคลองสอง อำเภอคลองหลวง                                                  จังหวัดปทุมธานี "
+                <Button
+                    android:text="ยืนยัน"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/textView34" />
-
-                <TextView
-                    android:text="เบอร์โทรศัพท์ : 098-9840689"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView35" />
-
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <Button
-                        android:text="ยืนยัน"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/button3"
-                        android:layout_marginTop="80dp"
-                        android:textSize="18sp"
-                        android:textAlignment="center" />
-                </LinearLayout>
-
+                    android:id="@+id/button3"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:textAllCaps="false"
+                    android:textStyle="normal|bold"
+                    android:textColor="@android:color/black" />
             </LinearLayout>
 
         </LinearLayout>

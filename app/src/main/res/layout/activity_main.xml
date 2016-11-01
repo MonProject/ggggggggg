@@ -66,11 +66,11 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPersonName"
                     android:ems="10"
                     android:id="@+id/editText2"
                     android:paddingLeft="30dp"
-                    android:hint="เบอร์โทรศัพท์" />
+                    android:hint="เบอร์โทรศัพท์"
+                    android:inputType="textPersonName|phone" />
 
                 <LinearLayout
                     android:orientation="vertical"

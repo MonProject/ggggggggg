@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_address"
     android:layout_width="match_parent"
@@ -16,47 +17,114 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:text="ส่งฟรี(เฉพาะคลอง 2 ธัญบุรี)"
+            android:text="จัดส่ง"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView14"
+            android:id="@+id/textView5"
+            android:textSize="24sp"
             android:textColor="@android:color/black"
-            android:textSize="18sp" />
+            android:textStyle="normal|bold"
+            android:textAlignment="center" />
+    </LinearLayout>
 
-        <TextView
-            android:text="ที่อยู่"
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioGroup
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView15"
-            android:textSize="18sp"
-            android:layout_marginTop="30dp"
-            android:textColor="@android:color/black" />
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_marginBottom="300dp">
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="ที่อยู่"
-            android:ems="10"
-            android:id="@+id/editText3" />
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-                android:text="ยืนยัน"
-                android:layout_width="wrap_content"
+            <RadioButton
+                android:text="จัดส่งฟรี (เฉพาะคลอง 2 ธัญบุรี)"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/button2"
-                android:layout_weight="1"
-                android:textColor="@android:color/black"
+                android:id="@+id/radioButton4"
                 android:textSize="18sp"
-                android:textAllCaps="false"
+                android:lineSpacingExtra="18sp"
                 android:textStyle="normal|bold"
-                android:layout_marginTop="250dp" />
-        </LinearLayout>
+                android:checked="false"
+                android:layout_weight="1" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPostalAddress"
+                android:ems="10"
+                android:id="@+id/editText4"
+                android:hint="ที่อยู่"
+                android:layout_marginRight="70dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="?attr/colorControlNormal"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:text="รับเอง"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton5"
+                android:layout_marginTop="5dp"
+                android:textStyle="normal|bold"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView16"
+                    android:layout_marginLeft="30dp"
+                    android:text="20/8 หมู่ 2 ตำบล คลองสอง อำเภอ คลองหลวง  จังหวัดปทุมธานี "
+                    android:layout_marginRight="50dp"
+                    android:textAlignment="viewStart"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:text="เบอร์โทรศัพท์ : 098-9840689"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView17"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+        </RadioGroup>
 
     </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="370dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp">
+
+        <Button
+            android:text="ยืนยัน"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:textAllCaps="false"
+            android:textStyle="normal|bold" />
+    </LinearLayout>
+
 </RelativeLayout>
